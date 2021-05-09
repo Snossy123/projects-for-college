@@ -11,6 +11,7 @@ music_player = tkr.Tk()
 music_player.geometry('700x450')
 music_player.config(background='#173c1b')
 music_player.title('Play It')
+project_directory = os.getcwd()
 
 # direction of playlist
 directory = askdirectory()
@@ -27,7 +28,7 @@ pygame.init()
 pygame.mixer.init()
 
 # test img
-open_img2 = Image.open('C:\\Users\\a\\PycharmProjects\\pythonProject4\\pause.png')
+open_img2 = Image.open(f'{project_directory}\\pause.png')
 resized2 = open_img2.resize((50, 50), Image.ANTIALIAS)
 play_img2 = ImageTk.PhotoImage(resized2)
 
@@ -142,7 +143,7 @@ def Play():
 
 
 # play button
-open_img = Image.open('C:\\Users\\a\\PycharmProjects\\pythonProject4\\play3.png')
+open_img = Image.open(f'{project_directory}\\play3.png')
 resized = open_img.resize((50, 50), Image.ANTIALIAS)
 play_img = ImageTk.PhotoImage(resized)
 Play_button = tkr.Button(image=play_img, bg='#173c1b', activebackground='#173c1b', width=50, height=50, relief='flat',
@@ -172,7 +173,7 @@ def next_song():
         current_song += 1
     Play()
 
-open_img5 = Image.open('C:\\Users\\a\\PycharmProjects\\pythonProject4\\next.png')
+open_img5 = Image.open(f'{project_directory}\\next.png')
 resized5 = open_img5.resize((50, 50), Image.ANTIALIAS)
 play_img5 = ImageTk.PhotoImage(resized5)
 nextsong = tkr.Button(image=play_img5, bg='#173c1b', activebackground='#173c1b', width=50, height=50, relief='flat',
@@ -187,7 +188,7 @@ def prev_song():
         current_song -= 1
     Play()
 
-open_img6 = Image.open('C:\\Users\\a\\PycharmProjects\\pythonProject4\\previous.png')
+open_img6 = Image.open(f'{project_directory}\\previous.png')
 resized6 = open_img6.resize((50, 50), Image.ANTIALIAS)
 play_img6 = ImageTk.PhotoImage(resized6)
 prevsong = tkr.Button(image=play_img6, bg='#173c1b', activebackground='#173c1b', width=50, height=50, relief='flat',
