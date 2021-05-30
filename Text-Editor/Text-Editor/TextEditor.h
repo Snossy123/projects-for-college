@@ -24,7 +24,7 @@ public:
     int* FindAll(string text);
 
     void FindAndReplace(string oldText, string newText);
-    
+    void display();
     
     
     void Show();

@@ -14,9 +14,9 @@ TextEditor::TextEditor()
 {
  
     inFile.open("Mini Text Editor.txt", ios::binary);
-    while (!inFile.eof()) {
+    while (getline(inFile, line)) {
 
-        getline(inFile, line);
+        
         if (line.length() > 2 && line.find(' ') != -1)
         {
             line = line.substr(line.find(' ') + 1);
@@ -58,6 +58,9 @@ void TextEditor::UpdateLine(int pos, string text)
 int* TextEditor::FindAll(string text)  //return the number of the lines containing specific word
 {
     int* arr = new int[items];
+    for (int i = 0; i < items; i++) {
+        arr[i] = -1;
+    }
     int j = 0;
     for (int i = 0; i < items; i++) {
 
@@ -66,6 +69,7 @@ int* TextEditor::FindAll(string text)  //return the number of the lines containi
             j++;
         }
     }
+
     return arr;
 }
 
@@ -89,7 +93,12 @@ void TextEditor::Show() //write elements to the file
     } 
     outFile.close();
 }
-
+void TextEditor::display() {
+    for (int i = 0; i < v.size(); i++) {
+        cout << " line = " << i + 1 << "- " << v[i] << endl;
+    }
+    cout << endl;
+}
  
 TextEditor::~TextEditor()
 {
