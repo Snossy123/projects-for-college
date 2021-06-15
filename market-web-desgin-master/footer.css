@@ -1,0 +1,80 @@
+/* start footer */
+*
+{
+	margin:0;
+	padding:0;
+}
+footer
+{
+	background-color:#000;
+	color:#fff;
+	height:320px;
+	 
+}
+.last_part
+{
+	overflow:hidden;
+	font-style:italic;
+}
+.feat
+{
+	float:left;
+	width:33.3%;
+}
+.feat h3
+{
+	padding:30px 155px 10px 155px;
+}
+.last_part .feat div
+{
+	line-height:35px;
+	padding-left:155px;
+	text-transform:capitalize;
+}
+.last_part .feat div a 
+{
+	color:#fff;
+	text-decoration:none;
+}
+.feat .icon
+{
+	display:block;
+	padding-left:150px;
+	margin-top:15px;
+}
+.feat .icon input
+{
+	
+	border-radius:5px;
+	border:none;
+	width:100px;
+	height:40px;
+	
+}
+.footerline
+{
+	 border: 2px   solid #E2E26A; 
+  border-radius: 5px;
+  width: 500px;
+ transform-origin: center
+}
+.ultra
+{
+	padding:20px 0px 20px 150px;
+	float:left;
+}
+.follow ul
+{
+	padding-right:300px;
+}
+.follow ul li
+{
+	float:right;
+	list-style-type:none;
+	padding:20px 10px 20px 15px;
+}
+.follow ul li a i 
+{
+	color:#fff;
+}
+/* end footer */

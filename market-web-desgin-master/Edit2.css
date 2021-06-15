@@ -1,0 +1,192 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family:arial;
+}	
+body
+{
+	height:1000px;
+	background-color:#f6f6f5;
+}
+
+/*start header*/
+
+.header
+{
+	background-color:#000;
+	height:80px;
+	position:relative;
+}
+.image .logo
+{
+	width:50px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	transition:0.6s ease;
+}
+.site_name
+{
+	font-family:palatino,Impact, Charcoal, sans-serif;
+	float:left;
+	position:absolute;
+	top:10px;
+	font-size:40px;
+	color:#fff;
+	margin-left:75px;
+	transition:0.6s ease;
+}
+.site_name span
+{
+	color:#fff000;
+}
+.text a[target="_blanck"]
+{
+	float:right;
+	position:absolute;
+	bottom:5px;
+	right:50px;
+	font-size:20px;
+	color:#fff000;
+	transition:0.6s ease;
+	text-decoration:none;
+}
+.text a:hover
+{
+	color:#fff;
+}
+
+/*end header */
+
+/* start navigation */
+
+.menu
+{
+	height:60px;
+	background-color:#fff;
+	position:relative;
+}
+.menu input[list="categories"]
+{
+	position:absolute;
+	top:15px;
+	left:80px;
+	height:25px;
+	width:350px;
+	border:2px groove #fff;
+	border-radius:5px;
+}
+.menu input[list="categories"]:hover
+{
+	border-color:#ffaaaa;
+}
+.menu .list 
+{
+	list-style-type:none;
+	float:right;
+	position:absolute;
+	right:120px;
+	top:20px;
+}
+.menu .list li 
+{
+	display:inline-block;
+}
+.menu .list li a 
+{
+	color:black;
+	text-decoration:none;
+	transition:0.6s ease;
+	padding:14px;
+	margin-right:20px;
+	font-size:17px;
+	border-radius:5px
+	
+}
+.menu .list li a:hover 
+{
+	color:#000;
+	background-color:#ddd;
+}
+.menu .list li a:active
+{
+	color:#fff;
+	background-color:#000;
+}
+/* end navigation */
+
+
+/*Start Edit_form*/ 
+  
+	/*Title_Edit_form*/
+	
+	.Title_Edit_form{
+	 font-size : 20px;
+	 text-align :center;
+	 padding: 16px;
+	}
+	
+	/*Edit_menu*/
+	
+	.Edit_menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+	  width : 1200px;
+	  
+    }
+
+    .Edit_menu li {
+     padding: 20px;
+     margin-bottom: 8px;
+     background-color: #cccccc;
+     color: #000000;
+	 font-size : 20px;
+	 border-radius: 5px;
+    }
+    .Edit_form{
+	  width : 1200px;
+	  border: 2px solid #000;
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 16px 16px;
+	  height : 400px;
+	}
+	
+	/*button_Edit*/
+	
+    .button_Edit{
+	  border-radius: 5px ;
+	  width : 90px;
+	  padding: 7px;
+	  text-align :center;
+	  font-size : 15px;
+	  float:right;
+	}
+	
+	/*button_End*/
+	
+    .button_End{
+	  border-radius: 5px;
+	   width : 1200px;
+	  padding: 7px;
+	  text-align :center;
+	  font-size : 15px;
+	}
+	
+/*End Edit_form*/
+
+/*Start Edit_username_form*/ 
+/*End Edit_username_form*/
+
+/*Start Edit_email_form*/
+/*End Edit_email_form*/
+
+/*Start Edit_password_form*/
+/*End Edit_password_form*/
+
+ 

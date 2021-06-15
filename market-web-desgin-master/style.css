@@ -1,0 +1,157 @@
+body{
+	background:-webkit-linear-gradient(left,#C48189,#FAAFBE);
+}
+#text{
+	font-size:60px;
+	position:fixed;
+	left:570px;
+	top:120px;
+	
+}
+#text1{
+	font-size:22px;
+	position:fixed;
+	left:585px;
+	top:250px;
+}
+#text2{
+	font-size:22px;
+	position:fixed;
+	left:630px;
+	top:255px;
+}
+.open-button{
+	background-color:#555;
+	color:white;
+	padding:13px 17px;
+	border:none;
+	cursor:pointer;
+	position:fixed;
+	width:160px;
+    bottom:20px;
+	right:135px;
+	border-radius:50px;
+	font-size:19px;
+}
+.box-form{
+	width:300px;
+	height:380px;
+	padding:20px;
+	background-color:white;
+	position:fixed;
+	right:55px;
+	bottom:78px;
+}
+input{
+	width:284px;
+	padding:15px;
+	margin:8px 10px 27px -6px;
+	border:none;
+	background-color:#f1f1f1;
+}
+
+button.btl{
+	background-color:#C48793;
+	color:white;
+	padding: 16px 20px;
+	border:none;
+	width:312px;
+	margin-bottom:10px;
+	margin-left:-5px;
+	margin-top:-6px;
+	cursor:pointer;
+	opacity:0.8;
+}
+button.btc{
+	background-color:#E7A1B0;
+	color:white;
+	padding: 16px 20px;
+	border:none;
+	width:312px;
+	margin-bottom:6px;
+	margin-left:-5px;
+	margin-top:5px;
+	cursor:pointer;
+    opacity:0.8;
+}
+.login-form{
+	display:none;
+	position:fixed;
+	bottom:0;
+	right:15px;
+	border:3px solid #f1f1f1;
+	z-index:5;
+	font-family:Helvetica;
+	margin-bottom:12px;
+}
+
+
+
+.opbutton{
+	background-color:#555;
+	color:white;
+	padding:13px 17px;
+	border:none;
+	cursor:pointer;
+	position:fixed;
+	width:160px;
+	border-radius:50px;
+	font-size:19px;
+	position:fixed;
+	left:135px;
+	bottom:20px;
+}
+.form-container{
+	width:300px;
+	height:600px;
+	padding:20px;
+	background-color:white;
+	position:fixed;
+	left:55px;
+	bottom:78px;
+	
+}
+button.br{
+	background-color:#C48793;
+	color:white;
+	padding: 16px 20px;
+	border:none;
+	width:312px;
+	margin-bottom:10px;
+	margin-left:-5px;
+	margin-top:-6px;
+	cursor:pointer;
+	opacity:0.8;
+}
+button.bc{
+	background-color:#E7A1B0;
+	color:white;
+	padding: 16px 20px;
+	border:none;
+	width:312px;
+	margin-bottom:6px;
+	margin-left:-5px;
+	margin-top:5px;
+	cursor:pointer;
+    opacity:0.8;
+}
+.register_form{
+	display:none;
+	position:fixed;
+	bottom:0;
+	right:15px;
+	border:3px solid #f1f1f1;
+	z-index:9;
+	font-family:Helvetica;
+	margin-bottom:12px;
+}
+
+
+
+
+
+
+
+
+
+

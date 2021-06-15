@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ultra</title>
+		<link rel="shortcut icon" href="uu.jpg">
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *
+{
+	margin:0;
+	padding:0;
+	font-family:arial;
+}
+body
+{
+}
+.container
+{
+	width:auto;
+	margin:auto;
+}
+
+/*start header*/
+
+header .container
+{
+	background-color:#FFE4E1;
+	height:80px;
+	position:relative;
+	
+}
+.image .logo
+{
+	width:50px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	transition:0.6s ease;
+}
+.site_name
+{
+	font-family:palatino,Impact, Charcoal, sans-serif;
+	float:left;
+	position:absolute;
+	top:10px;
+	font-size:40px;
+	color:	#708090;
+	margin-left:50px;
+	transition:0.6s ease;
+}
+.site_name span
+{
+	color:#FFF5EE;
+}
+.text a[target="_blanck"]
+{
+	float:right;
+	position:absolute;
+	bottom:20px;
+	right:50px;
+	font-size:20px;
+    letter-spacing: 2px;
+	color:	#708090;
+	transition:0.6s ease;
+	text-decoration:none;
+}
+.text a:hover
+{
+	color: #ffaaaa;
+}
+
+/*end header */
+
+/* start navigation */
+
+.menu .container
+{
+	height:60px;
+	position:relative;
+    background-color: #FAF0E6; 
+}
+.menu input[list="categories"]
+{
+	/*position:absolute;
+	top:15px;
+	left:80px;
+	height:25px;
+	width:350px;
+	border:2px groove #fff;
+	border-radius:5px;*/
+    position:absolute;
+    top:7px;
+	left:50px;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.menu input[list="categories"]:hover
+{
+	border-color:#ffaaaa;
+	
+}
+.menu input[list="categories"]:focus
+{
+	width: 50%;
+	
+}
+.menu .list 
+{
+	list-style-type:none;
+	float:right;
+	position:absolute;
+	right:30px;
+	top:20px;
+}
+.menu .list li 
+{
+	display:inline-block;
+}
+.menu .list li a 
+{
+	color:#52565e;
+	text-decoration:none;
+	transition:0.6s ease;
+	margin:5px;
+	margin-right:20px;
+}
+.menu .list li a:hover 
+{
+	color:#ffaaaa;
+	border:1px solid transparent;
+}
+
+/* end navigation */
+
+/* start articles */
+
+.images .container 
+{
+	background-image:url('Shopping-Online00.jpg');
+	background-size:cover;
+	height:600px;
+}
+/* end articles */
+        </style>
+	</head>
+	<body>
+		<!-- start header -->
+		
+		<header>
+			<div class="container">
+				<section>
+					<!-- <div class="image">
+						<img class="logo" src="ww1.png" alt="page_logo">
+					</div> -->
+					<div class="site_name"><h1><span>Ul</span>tra</h1></div>
+				</section>
+				
+				<section>
+					<div class="text">
+						<a href="login.html" target="_blanck">Do you have an account?</a>
+					</div>
+				</section>
+			</div>
+        </header>
+		
+		<!-- end header -->
+		
+		
+		<!-- start navigation -->
+		
+		<nav>
+			<div class="menu">
+				<div class="container">
+					<section>
+						<form>
+							<input type="search" list="categories" placeholder="search...">
+							<datalist id="categories">
+								<!--<option value="clothes">
+								<option value="shoes">
+								<option value="electronic devices">-->
+							</datalist>
+						</form>
+					</section>
+					
+					<section>
+						<ul class="list">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+                            <li><a href="#">help!</a></li>
+							<li>
+								<a href="#"><i class="fa fa-user"></i></a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- end navigation -->
+		
+		<!-- start articles -->
+		<!--<div class="images">
+			<div class="container">
+				
+			</div>
+		</div>-->
+		
+		<!-- end articles -->
+	</body>
+</html>

@@ -1,0 +1,439 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgba(12, 12, 12, 0.2);
+}
+.logo{
+  width: 70px;
+  height: 55px;
+}
+.Container{
+  width: 80%;
+  margin: auto;
+}
+header{
+   background-color: rgba(0,0,0,.2);
+   padding: 10px 0;
+   display: block;
+}
+.header_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_content .brand{
+   font-size: 32px;
+   color: #cad315;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul#userInfo{
+  display: none;
+  margin: 3px;
+}
+
+nav li a{
+  display: block;
+  min-width: 50px;
+  color: #cad315;
+  margin: 0 5px;
+}
+
+/* ***************************** form ********************************* */
+
+.section_form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  text-align: center;
+  background-color: #cad315;
+  padding: 20px;
+}
+
+.section_form h2{
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #d37815;
+}
+
+.section_form form input{
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  outline: 0;
+}
+.section_form form input[type="submit"]{
+  font-size: 25px;
+  height: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.section_form form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/*home img*/
+
+.home{
+  position: relative;
+  height: 590px;
+}
+.home_img{
+  position: absolute;
+  width: 1349px;
+  height: 570px;
+  z-index: 1;
+}
+.introduction{
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  left: 100px;
+  width: 225px;
+  height: 180px;
+  padding: 10px;
+  border: 10px solid #e4e978;
+}
+.introduction  p{
+  color: #d37815;
+}
+.introduction  h1{
+  color: #cad315;
+
+}
+.introduction  button{
+  margin-top: 10px;
+  width: 50%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: #e4e978;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 5px;
+  outline: 0;
+}
+h2{
+  margin: 5px auto;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  color: #ccd408;
+}
+hr{
+  width: 200px;
+  margin: 0px auto;
+  margin-bottom: 8px;
+  height: 2px;
+  mix-blend-mode: color-burn;
+}
+/*  ****************** product ****************** */
+.products_section{
+  position: relative;
+  height: 1300px;
+}
+.product{
+  margin: 30px auto;
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+  position: relative;
+  background-color: #d37815;
+  transition: 0.5s ease;
+}
+.product:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 5px  15px #888888;
+
+}
+
+.product_img img{
+  width: 100%;
+  height: 100%;
+
+  border-radius : 10px;
+}
+.product_description{
+  margin: 0 10px;
+  padding: 10px;
+  font-family: 'Roboto Mono', monospace;
+}
+.product_description p{
+  margin-top: 10px;
+  color: #555555;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.product_description span{
+  margin: 10px 0px;
+  font-size: 25px;
+  color: #8d4949;
+}
+.product_action{
+  margin: 10px 10px;
+  padding: 10px;
+}
+.product_action button{
+  position: relative;
+  width: 200px;
+  height: auto;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #cad315;
+  color: #6a6d3d;
+  outline: 0;
+}
+.product_action button:hover{
+  background-color: #eaee60;
+  cursor: pointer;
+}
+.product_action i .fas{
+  position: absolute;
+}
+
+
+/*trend*/
+.trend{
+  width: 100%;
+  height: 600px;
+}
+.Trend_Container{
+  width: 85%;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.Trend_Container img{
+  height: 100%;
+  border-radius: 5px;
+}
+.Trend_Container .sale{
+  transition: .5s ease;
+}
+.Trend_Container .sale:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,.2);
+}
+.Trend_Container .sale img {
+  z-index: 1;
+}
+.Trend_Container .sale  .sale_desc  {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  width: 175px;
+  height: 180px;
+  padding: 2px;
+  border: 8px solid #e4e978;
+}
+.Trend_Container #1{
+  left: 30px;
+}
+.Trend_Container #2{
+  left: 430px;
+}
+.Trend_Container #3{
+  left: 830px;
+}
+.Trend_Container  p{
+  color: #d37815;
+}
+.Trend_Container  h1{
+  color: #cad315;
+
+}
+.Trend_Container  button{
+  margin-top: 10px;
+  width: 40%;
+  height: 10%;
+  border-radius: 5px;
+  background-color: #e4e978;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  outline: 0;
+  font-size: 8px;
+  padding: 2px;
+}
+
+
+/*best sales*/
+.best_sales{
+  width: 100%;
+  height: 480px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.best1{
+  height: 417px;
+  width: 626px;
+  margin: 0px auto;
+  border-radius: 8px;
+  background: url("https://image.freepik.com/free-photo/cheerful-male-gives-nice-offer-advertises-new-product-sale-stands-torn-paper-hole-has-positive-expression_273609-38452.jpg");
+  position: relative;
+}
+.best2{
+  height: 417px;
+  width: 626px;
+  margin: 0px auto;
+  border-radius: 8px;
+  background: url("https://image.freepik.com/free-photo/positive-young-woman-shop-assistant-helps-customer-find-dressing-room-advertises-product-sale-points-thumb-aside-wears-casual-t-shirt-smiles-gladfully-isolated-pink-wall_273609-42528.jpg");
+  position: relative;
+}
+ .image{
+  position: absolute;
+  width: 270px;
+  height: 200px;
+  right: 0px;
+  border-radius: 0 8px;
+  z-index: 1;
+}
+  .offer{
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  right: 0px;
+  border-radius: 0 8px;
+  z-index: 2;
+}
+.shop{
+  position: absolute;
+  width: 270px;
+  height: 200px;
+  right: 0px;
+  border-radius: 0 8px;
+  z-index: 3;
+  background-color: rgba(0,0,0,.2);
+  opacity: 0;
+}
+.shop button{
+  margin: 95px 103px;
+  width: 78px;
+  height: 19px;
+  border-radius: 10px;
+  background-color: darkorange;
+  color: white;
+  outline: 0;
+  font-size: 8px;
+  cursor: pointer;
+  padding: 2px;
+}
+.shop:hover{
+   opacity: 1;
+}
+/* review slider*/
+.Review{
+  width: 100%;
+  height: 500px;
+}
+.customer_review{
+  margin: 15px auto;
+  height: 352px;
+  width: 627px;
+  background: url("https://image.freepik.com/free-vector/orange-distressed-texture_53876-80492.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,.3);
+  display:  flex;
+  justify-content: space-between;
+}
+.custom  {
+  margin: 0px auto;
+  padding-top: 10px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  opacity: 1;
+  left: 25%;
+  transition: opacity 1s;
+
+}
+.custom.active{
+  opacity: 1;
+}
+.customer_review  .fas{
+  margin: auto 5px;
+  cursor: pointer;
+}
+
+.customer{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+.custom h1 {
+  margin: 5px auto;
+  color: #944f05;
+}
+.custom p{
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+}
+
+/*footer*/
+footer{
+  background-image: url("https://images.unsplash.com/photo-1608056069613-5629ee466519?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=740&q=80");
+  width: 100%;
+  height: 300px;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+
+.fab{
+  width: 17%;
+  height: 70%;
+  color: #8d4949;
+}
+
+.address,
+.contacts,
+.links {
+  width: 27%;
+  height: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #8d4949;
+  font-family: 'Lobster', cursive ;
+ }
+
+
+.Rights{
+  display: flex;
+  justify-content: space-between;
+  color: #8d4949;
+}
+footer span{
+  margin: 5px;
+}

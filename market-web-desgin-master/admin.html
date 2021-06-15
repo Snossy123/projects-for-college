@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body id="body">
+        
+        <!-- start header -->
+        
+        <header class="header">
+			<section>
+				<div class="site_name"><h1><span>Ul</span>tra</h1></div>
+			</section>
+            <section>
+                <div>
+                   <h3 class="pageName">ADMIN<br><span>PAGE</span></h3>
+                </div>
+            </section>
+        </header>
+        
+        <!-- end header -->
+        
+        <!-- start navigation -->
+        
+        <nav>
+            <div class="navigationBar">
+                <section>
+                    <h3 id="adminName">ADMIN</h3>
+                </section>
+            
+                <section>
+                    <div class="functionsList">
+                        <button onclick='openform1("changeContactForm", "paragraph1", "firstP")'>
+                            change contact
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <button onclick='openform1("changeAboutForm", "paragraph2", "firstP")'>
+                            change about
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <button onclick='openform2("changeAdminPage","firstP")'>change admin
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </nav>
+        <!-- end navigation -->
+        
+        <!-- start content-->
+        <div class="content">
+            <p id="firstP">Choose from the above buttons</p>
+            <div>
+                <form id="changeContactForm">
+                    <textarea placeholder="about..." id="secondParagraph"></textarea>
+                    <button id="changeButton">Change</button>
+                    <button id="closeButton" onclick='closeform1("changeContactForm", "paragraph1")'>Close</button>
+                </form>
+                <p id="paragraph1">
+                    Here you can change <br> the contant of the contact bage
+                </p>
+            </div>
+            <div>
+                <form id="changeAboutForm">
+                    <textarea placeholder="about..." id="secondParagraph"></textarea>
+                    <button id="changeButton">Change</button>
+                    <button id="closeButton" onclick='closeform1("changeAdminPage", "firstP")'>Close</button>
+                </form>
+                <p id="paragraph2">
+                    Here you can change <br> the contant of the about bage
+                </p>
+            </div>
+            <div id="changeAdminPage">
+                <button id="red" onclick='change("red")'>red</button>
+                <button id="green" onclick='change("green")'>green</button>
+                <button id="blue" onclick='change("blue")'>blue</button>
+                <button id="orignal" onclick='change("#f6f6f5")'>orignal</button>
+                <button id="closebutton" onclick='closeform2()'>close</button>
+            </div>
+        </div>
+        <!-- start footer -->
+        <footer>
+        </footer>
+        <script >
+            function openform1(id, id2, id3) {
+                document.getElementById(id).style.display = "block";
+                document.getElementById(id2).style.display = "block";
+                document.getElementById(id3).style.display = "none";
+            }
+            function openform2(id, id2) {
+                document.getElementById(id).style.display = "block";
+                document.getElementById(id2).style.display = "none";
+            }    
+            function closeform1(id, id2) {
+                document.getElementsById(id).style.display = "none";
+                document.getElementById(id2).style.display = "none";
+                document.getElementById("firstP").style.display = "block";
+            }
+            function closeform2() {                                    document.getElementById("changeAdminPage").style.display = "none";
+                document.getElementById("firstP").style.display = "block";
+            }
+            function change(color) {
+            document.getElementById("body").style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>

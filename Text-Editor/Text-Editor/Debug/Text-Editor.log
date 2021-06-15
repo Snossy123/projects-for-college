@@ -1,5 +1,6 @@
 ﻿  Source.cpp
   TextEditor.cpp
-C:\Users\a\source\repos\Text-Editor\Text-Editor\TextEditor.cpp(87,23): warning C4018: '<': signed/unsigned mismatch
+D:\Eng Solieman\PROJECTS\My-Projects\Text-Editor\Text-Editor\TextEditor.cpp(91,23): warning C4018: '<': signed/unsigned mismatch
+D:\Eng Solieman\PROJECTS\My-Projects\Text-Editor\Text-Editor\TextEditor.cpp(97,23): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-  Text-Editor.vcxproj -> C:\Users\a\source\repos\Text-Editor\Debug\Text-Editor.exe
+  Text-Editor.vcxproj -> D:\Eng Solieman\PROJECTS\My-Projects\Text-Editor\Debug\Text-Editor.exe

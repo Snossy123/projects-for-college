@@ -1,0 +1,359 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family:arial;
+}	
+body
+{
+	height:1000px;
+	background-color:#f6f6f5;
+}
+
+/*start header*/
+
+.header
+{
+	background-color:#000;
+	height:80px;
+	position:relative;
+}
+.image .logo
+{
+	width:50px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	transition:0.6s ease;
+}
+.site_name
+{
+	font-family:palatino,Impact, Charcoal, sans-serif;
+	float:left;
+	position:absolute;
+	top:10px;
+	font-size:40px;
+	color:#fff;
+	margin-left:75px;
+	transition:0.6s ease;
+}
+.site_name span
+{
+	color:#fff000;
+}
+.text a[target="_blanck"]
+{
+	float:right;
+	position:absolute;
+	bottom:5px;
+	right:50px;
+	font-size:20px;
+	color:#fff000;
+	transition:0.6s ease;
+	text-decoration:none;
+}
+.text a:hover
+{
+	color:#fff;
+}
+
+/*end header */
+
+/* start navigation */
+
+.menu
+{
+	height:60px;
+	background-color:#fff;
+	position:relative;
+}
+.menu input[list="categories"]
+{
+	position:absolute;
+	top:15px;
+	left:80px;
+	height:25px;
+	width:350px;
+	border:2px groove #fff;
+	border-radius:5px;
+}
+.menu input[list="categories"]:hover
+{
+	border-color:#ffaaaa;
+}
+.menu .list 
+{
+	list-style-type:none;
+	float:right;
+	position:absolute;
+	right:120px;
+	top:20px;
+}
+.menu .list li 
+{
+	display:inline-block;
+}
+.menu .list li a 
+{
+	color:black;
+	text-decoration:none;
+	transition:0.6s ease;
+	padding:14px;
+	margin-right:20px;
+	font-size:17px;
+	border-radius:5px
+	
+}
+.menu .list li a:hover 
+{
+	color:#000;
+	background-color:#ddd;
+}
+.menu .list li a:active
+{
+	color:#fff;
+	background-color:#000;
+}
+/* end navigation */
+
+
+
+
+/* start my_orders_page*/
+
+
+
+ /* start My_orders_Title */
+    .my_orders_Title{
+	  margin: 5px 30px;
+	  padding: 10px;
+	  font-family : fantasy;
+	  font-size : 25px;
+	}
+	
+	.my_orders_Title h1{
+	  
+	   font-family : fantasy;
+	   text-shadow : 2px 2px 5px #fff000;
+	}
+	
+	.my_orders_Title p{
+	  
+	   font-family : serif;
+	   color :gray;
+	}
+	
+ /* end My_orders_Title */
+
+
+
+ /* start my_orders_form */
+    .my_orders_form{
+	  margin: 15px 35px;
+	  padding: 15px;
+	  border-radius: 5px;
+	  background-color: #fff;
+	  box-shadow: 2px 2px 5px black ,2px 2px 5px black;
+	  overflow :auto;	
+	}
+
+
+
+   /* start My_orders_header */
+    .my_orders_header{
+		
+	  margin: 5px 5px;
+	  padding: 5px;
+	  border-bottom : 2px solid #000 ;
+		
+	}
+
+    .my_orders_name{
+	  width : 200px;
+	  display:inline-block;
+	  border-radius: 50px;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	  margin: 16px 16px;
+	  padding: 20px;
+	  background-color:#000;
+	  color :#fff;
+	  text-shadow : 2px 2px 5px #fff000;
+	}
+	
+	.my_orders_name p {
+	  display:inline-block;
+	  text-shadow : 2px 2px 5px #fff000;
+	}
+	
+	.my_orders_name h3 {
+	  font-family : fantasy;
+	  display:inline-block;
+	  color :#fff000;
+	}
+	
+	.my_orders_date{
+	  float:right;
+	  width : 200px;
+	  display:inline-block;
+      text-shadow : 2px 2px 5px #fff000;
+	  border-radius: 50px;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	  margin: 16px 16px;
+	  padding: 20px;
+	  background-color:#000;
+	  color :#fff;
+	  font-family : fantasy;
+	  
+	}
+	
+	.my_orders_date p {
+	  display:inline-block;
+	}
+	
+	.my_orders_date h3 {
+	  display:inline-block;
+	  font-family : fantasy;
+	  color :#fff000;
+	   
+	}
+	
+	.Order_placed{
+		border: none;
+		background-color:#000;
+		color :#fff;
+		
+	}
+
+   /* end My_orders_header */
+
+
+
+   /* start My_orders_product */
+    .my_orders_product{
+	  border-bottom : 2px solid #000 ;
+	  margin: 5px 5px;
+	  padding: 5px;
+	  overflow :auto;
+	}
+
+    .Product_image{
+	   float:left;
+	   width : 200px;
+	}
+	
+	.my_orders_product_details{
+	  display:inline-block;
+	  float:center;
+      margin: 16px 16px;
+	  padding: 20px;
+      position:;
+      width : 300px;
+      	  
+	}
+	
+	.my_orders_product_details h3{
+      text-shadow : 2px 2px 5px black;
+	  margin: 16px ;
+	}
+
+    .my_orders_product_details p{
+      line-height : 50px;
+	  margin: 16px ;
+	  text-shadow : 2px 2px 5px gray;
+	}
+
+	.my_orders_product_status{
+	  display:inline-block;
+      float:center-right;
+	  margin: center ;
+      	  
+	}
+	
+	.my_orders_product_status h3{
+		font-family : ;
+		text-shadow : 2px 2px 5px black;   
+	}
+
+    .my_orders_product_status h4{
+	    line-height : 70px;
+		font-family : Times;
+		color:#fff000;
+		font-size : 25px; 
+        text-shadow : 2px 2px 5px black;		
+	}
+
+	
+	.my_orders_product_price{
+	  display:inline-block;
+      float:right;
+      margin: 16px 16px;
+	  padding: 20px;
+	  line-height : 50px;	  
+	}
+
+    .my_orders_product_price h3{
+		
+		text-shadow : 2px 2px 5px black;   
+	}
+	
+	.my_orders_product_price p{
+		
+		text-shadow : 2px 2px 5px gray;  
+	}
+	
+	 
+   /* end My_orders_product */
+   
+   /* start my_orders_footer*/
+     .my_orders_footer{
+	    margin: 16px 16px;
+	    padding: 20px;
+        overflow :auto;		
+	}
+	
+	.my_orders_total_price{
+	  display:inline-block;
+      float:right;	  
+	}
+	
+	.my_orders_total_price p {
+	  text-shadow : 2px 2px 5px gray;
+	  line-height : 50px;
+	}
+	
+	.my_orders_total_price h3 {
+	   text-shadow : 2px 2px 5px black;
+	}
+     
+	 .my_orders_Expected_time {
+	  display:inline-block;
+	  position : center;
+	}
+	 
+    .my_orders_Expected_time h3{
+	  
+	  text-shadow : 2px 2px 5px black;
+	}
+	
+	.my_orders_Expected_time p{
+	  
+	  line-height : 50px;
+	}
+	
+	.input_Expected_time {
+	  
+	  border : none ;
+	  text-shadow : 2px 2px 5px black;
+	}
+   
+   /* end my_orders_footer*/
+
+ /* end my_orders_form */
+
+/* end my_orders_page */
+
+
+
+

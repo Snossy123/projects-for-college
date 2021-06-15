@@ -1,0 +1,135 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family:arial;
+}	
+body
+{
+	background-color:#f6f6f5;
+}
+/*start header*/
+
+.header
+{
+	background-color:#000;
+	height:80px;
+	position:relative;
+}
+.image .logo
+{
+	width:50px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	transition:0.6s ease;
+}
+.site_name
+{
+	font-family:palatino,Impact, Charcoal, sans-serif;
+	float:left;
+	position:absolute;
+	top:10px;
+	font-size:40px;
+	color:#fff;
+	margin-left:75px;
+	transition:0.6s ease;
+}
+.site_name span
+{
+	color:#fff000;
+}
+.text a[target="_blanck"]
+{
+	float:right;
+	position:absolute;
+	bottom:5px;
+	right:50px;
+	font-size:20px;
+	color:#fff000;
+	transition:0.6s ease;
+	text-decoration:none;
+}
+.text a:hover
+{
+	color:#fff;
+}
+
+/*end header */
+
+/* start navigation */
+
+.menu
+{
+	height:60px;
+	background-color:#fff;
+	position:relative;
+}
+.menu input[list="categories"]
+{
+	position:absolute;
+	top:15px;
+	left:80px;
+	height:25px;
+	width:350px;
+	border:2px groove #fff;
+	border-radius:5px;
+}
+.menu input[list="categories"]:hover
+{
+	border-color:#000;
+}
+.menu .list 
+{
+	list-style-type:none;
+	float:right;
+	position:absolute;
+	right:120px;
+	top:20px;
+}
+.menu .list li 
+{
+	display:inline-block;
+}
+.menu .list li a 
+{
+	color:black;
+	text-decoration:none;
+	transition:0.6s ease;
+	padding:14px;
+	margin-right:20px;
+	font-size:17px;
+	border-radius:5px
+	
+}
+.menu .list li a:hover 
+{
+	color:#000;
+	background-color:#ddd;
+}
+.menu .list li a:active
+{
+	color:#fff;
+	background-color:#000;
+}
+/* end navigation */
+
+/* start article */
+.about h1
+{
+	text-align:center;
+	margin-top:20px;
+}
+.about h3
+{
+	margin:20px 0px 30px 80px;
+}
+.about p
+{
+	color:#6d6e70;
+	margin:0px 0px 25px 80px;
+	
+}
+/* end article */
