@@ -1,0 +1,550 @@
+
+package clinic;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+
+public class Receptionist extends Person implements User{ 
+    JFrame frame = new JFrame("Receptionest");
+    JFrame frame2 = new JFrame("Add Patient");
+    JFrame frame3 = new JFrame("view patient");
+    JFrame frame4 = new JFrame("view Prescription");
+    JFrame frame5 = new JFrame("patient Inline");
+
+    private static int token_id =0;
+    private String user_name, user_password;
+        /* constractor*/
+    public Receptionist(int person_id, String person_name, String person_address, String person_mobile, String user_name, String user_password) {
+    super(person_id, person_name, person_address,person_mobile);
+    this.user_name = user_name;
+    this.user_password = user_password;
+        //Gui
+    frame.setSize(500, 500);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setLocation(400, 120);
+    frame.setResizable(false);
+    frame.setLayout(null);
+
+    JButton b1 = new JButton("Change Password");
+    b1.setForeground(Color.MAGENTA);
+    b1.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b2 = new JButton("Logout");
+    b2.setForeground(Color.MAGENTA);
+    b2.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b3 = new JButton("Add Patient");
+    b3.setForeground(Color.MAGENTA);
+    b3.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b4 = new JButton("Submit");
+    b4.setForeground(Color.MAGENTA);
+    b4.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b5 = new JButton("Back");
+    b5.setForeground(Color.MAGENTA);
+    b5.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b6 = new JButton("View patient");
+    b6.setForeground(Color.MAGENTA);
+    b6.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b7 = new JButton("patient Inline");
+    b7.setForeground(Color.MAGENTA);
+    b7.setFont(new Font("Arial", Font.BOLD, 14));
+    JButton b8 = new JButton("View Prescription");
+    b8.setFont(new Font("Arial", Font.BOLD, 14));
+    b8.setForeground(Color.MAGENTA);
+    
+    JButton b444 = new JButton("View");
+    b444.setForeground(Color.MAGENTA);
+    b444.setFont(new Font("Arial", Font.BOLD, 14));
+    
+    JButton b4444 = new JButton("View");
+    b4444.setForeground(Color.MAGENTA);
+    b4444.setFont(new Font("Arial", Font.BOLD, 14));
+    
+    JButton b44 = new JButton("View");
+    b44.setForeground(Color.MAGENTA);
+    b44.setFont(new Font("Arial", Font.BOLD, 14));
+
+    b1.setBounds(50, 400, 200, 30);
+    b1.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            String oldpass = JOptionPane.showInputDialog(frame, "Enter Old Password");
+            String newpass = JOptionPane.showInputDialog(frame, "Enter new Password");
+            changepassword(oldpass, newpass);
+        }
+    });
+    b2.setBounds(350, 400, 100, 30);
+    b2.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            logout();
+        }
+    });
+    //btn add patient
+    JLabel l1 = new JLabel("Enter Patient Id"); 
+    JLabel l2 = new JLabel("Enter Patient Name");
+    JLabel l3 = new JLabel("Enter Patient Address");
+    JLabel l4 = new JLabel("Enter Patient mobile");
+    JLabel l5 = new JLabel("take Patient Id");
+    JLabel l6 = new JLabel("Date");
+
+
+    JTextField t1 = new JTextField();
+    JTextField t2 = new JTextField();
+    JTextField t3 = new JTextField();
+    JTextField t4 = new JTextField();
+    JTextField t5 = new JTextField();
+    JTextField t6 = new JTextField();
+
+    l1.setBounds(50, 50, 130, 30);
+    l1.setForeground(Color.magenta);
+    l1.setFont(new Font("Arial", Font.BOLD, 16));
+    l2.setBounds(50, 100, 200, 30);
+    l2.setForeground(Color.magenta);
+    l2.setFont(new Font("Arial", Font.BOLD, 16));
+    l3.setBounds(50, 150, 200, 30);
+    l3.setForeground(Color.magenta);
+    l3.setFont(new Font("Arial", Font.BOLD, 16));
+    l4.setBounds(50, 200, 200, 30);
+    l4.setForeground(Color.magenta);
+    l4.setFont(new Font("Arial", Font.BOLD, 16));
+    l5.setBounds(50, 250, 200, 30);
+    l5.setForeground(Color.magenta);
+    l5.setFont(new Font("Arial", Font.BOLD, 16));
+    l6.setBounds(50, 300, 200, 30);
+    l6.setForeground(Color.magenta);
+    l6.setFont(new Font("Arial", Font.BOLD, 16));
+
+    t1.setBounds(300, 50, 160, 30);
+    t1.setForeground(Color.magenta);
+    t1.setFont(new Font("Arial", Font.BOLD, 16));
+    t2.setBounds(300, 100, 160, 30);
+    t2.setForeground(Color.magenta);
+    t2.setFont(new Font("Arial", Font.BOLD, 16));
+    t3.setBounds(300, 150, 160, 30);
+    t3.setForeground(Color.magenta);
+    t3.setFont(new Font("Arial", Font.BOLD, 16));
+    t4.setBounds(300, 200, 160, 30);
+    t4.setForeground(Color.magenta);
+    t4.setFont(new Font("Arial", Font.BOLD, 16));
+    t5.setBounds(300, 250, 160, 30);
+    t5.setForeground(Color.magenta);
+    t5.setFont(new Font("Arial", Font.BOLD, 16));
+    t5.setEditable(false);
+    t5.setText("" + ++token_id);
+    t6.setBounds(300, 300, 160, 30);
+    t6.setForeground(Color.magenta);
+    t6.setFont(new Font("Arial", Font.BOLD, 16));
+
+    //add patient
+    b3.setBounds(150, 50, 200, 30);
+    b3.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            frame2.setSize(500, 500);
+            frame2.setLocation(400, 120);
+            frame2.setResizable(false);
+            frame2.setLayout(null);
+            //btn submit
+            b4.setBounds(50, 400, 150, 30);
+            b4.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    token_id = add_Patient(t1.getText(), t2.getText(), t3.getText(), t4.getText(), t6.getText(), t5.getText());
+                    t1.setText("");t2.setText("");t3.setText("");t4.setText("");t5.setText(token_id + "");t6.setText("");
+                }
+            });
+
+           //btn back
+            b5.setBounds(300, 400, 150, 30);
+            b5.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    t1.setText("");t2.setText("");t3.setText("");t4.setText("");t5.setText("" + token_id);t6.setText("");
+                    frame2.setVisible(false);
+                    frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setVisible(true);
+                }
+            });
+            frame2.add(b4);frame2.add(b5);
+            frame2.add(l1);frame2.add(l2);frame2.add(l3);frame2.add(l4);frame2.add(l5);frame2.add(l6);
+            frame2.add(t1);frame2.add(t2);frame2.add(t3);frame2.add(t4);frame2.add(t5);frame2.add(t6);
+            frame2.setVisible(true);
+            frame.setVisible(false);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
+    });
+    
+    //btn view patient
+    b6.setBounds(150, 120, 200, 30);
+    JLabel labelsearch = new JLabel("Enter Token Id");
+    JLabel l11 = new JLabel("Patient Id"); 
+    JLabel l22 = new JLabel("Patient Name");
+    JLabel l33 = new JLabel("Patient Address");
+    JLabel l44 = new JLabel("Patient mobile");
+    JLabel l55 = new JLabel("Patient Id");
+    JLabel l66 = new JLabel("Date");
+
+
+    JTextField textsearch = new JTextField();
+    JTextField t11 = new JTextField();
+    JTextField t22 = new JTextField();
+    JTextField t33 = new JTextField();
+    JTextField t44 = new JTextField();
+    JTextField t55 = new JTextField();
+    JTextField t66 = new JTextField();
+
+    labelsearch.setBounds(50, 50, 130, 30);
+    labelsearch.setForeground(Color.magenta);
+    labelsearch.setFont(new Font("Arial", Font.BOLD, 16));
+    l11.setBounds(50, 100, 130, 30);
+    l11.setForeground(Color.magenta);
+    l11.setFont(new Font("Arial", Font.BOLD, 16));
+    l22.setBounds(50, 150, 200, 30);
+    l22.setForeground(Color.magenta);
+    l22.setFont(new Font("Arial", Font.BOLD, 16));
+    l33.setBounds(50, 200, 200, 30);
+    l33.setForeground(Color.magenta);
+    l33.setFont(new Font("Arial", Font.BOLD, 16));
+    l44.setBounds(50, 250, 200, 30);
+    l44.setForeground(Color.magenta);
+    l44.setFont(new Font("Arial", Font.BOLD, 16));
+    l55.setBounds(50, 300, 200, 30);
+    l55.setForeground(Color.magenta);
+    l55.setFont(new Font("Arial", Font.BOLD, 16));
+    l66.setBounds(50, 350, 200, 30);
+    l66.setForeground(Color.magenta);
+    l66.setFont(new Font("Arial", Font.BOLD, 16));
+
+    textsearch.setBounds(300, 50, 160, 30);
+    textsearch.setForeground(Color.magenta);
+    textsearch.setFont(new Font("Arial", Font.BOLD, 16));
+    t11.setBounds(300, 100, 160, 30);
+    t11.setForeground(Color.magenta);
+    t11.setFont(new Font("Arial", Font.BOLD, 16));
+    t11.setEditable(false);
+    t22.setBounds(300, 150, 160, 30);
+    t22.setForeground(Color.magenta);
+    t22.setFont(new Font("Arial", Font.BOLD, 16));
+    t22.setEditable(false);
+    t33.setBounds(300, 200, 160, 30);
+    t33.setForeground(Color.magenta);
+    t33.setFont(new Font("Arial", Font.BOLD, 16));
+    t33.setEditable(false);
+    t44.setBounds(300, 250, 160, 30);
+    t44.setForeground(Color.magenta);
+    t44.setFont(new Font("Arial", Font.BOLD, 16));
+    t44.setEditable(false);
+    t55.setBounds(300, 300, 160, 30);
+    t55.setForeground(Color.magenta);
+    t55.setFont(new Font("Arial", Font.BOLD, 16));
+    t55.setEditable(false);
+    t66.setBounds(300, 350, 160, 30);
+    t66.setForeground(Color.magenta);
+    t66.setFont(new Font("Arial", Font.BOLD, 16));
+    t66.setEditable(false);
+        b6.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            frame3.setSize(500, 500);
+            frame3.setLocation(400, 120);
+            frame3.setResizable(false);
+            frame3.setLayout(null);
+            //btn submit
+            b44.setBounds(50, 400, 150, 30);
+            b44.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    viewPatient(textsearch.getText());
+                    textsearch.setText("");
+                }
+            });
+
+            //btn back
+            b5.setBounds(300, 400, 150, 30);
+            b5.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    textsearch.setText("");
+                    frame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame3.setVisible(false);
+                    frame.setVisible(true);
+                }
+            });
+            frame3.add(l11);frame3.add(l22);frame3.add(l33);frame3.add(l44);frame3.add(l55);frame3.add(l66);
+            frame3.add(t11);frame3.add(t22);frame3.add(t33);frame3.add(t44);frame3.add(t55);frame3.add(t66);
+            frame3.add(labelsearch);frame3.add(textsearch);
+            frame3.add(b44);frame3.add(b5);
+            frame.setVisible(false);
+            frame3.setVisible(true);
+        }
+    });
+        //btn inline
+        b7.setBounds(150, 190, 200, 30);
+        b7.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            frame5.setSize(500, 500);
+            frame5.setLocation(400, 120);
+            frame5.setResizable(false);
+            frame5.setLayout(null);
+            //btn submit
+            b444.setText("View");
+            b444.setBounds(50, 400, 150, 30);
+            b444.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                }
+            });
+
+            //btn back
+            b5.setBounds(300, 400, 150, 30);
+            b5.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    textsearch.setText("");
+                    frame5.setVisible(false);
+                    frame5.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setVisible(true);
+                }
+            });
+            frame5.add(b444);frame5.add(b5);
+            frame.setVisible(false);
+            frame5.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame5.setVisible(true);
+        }
+    });
+        //view Prescription
+        b8.setBounds(150, 260, 200, 30);
+        JButton btn1 = new JButton("Enter medicine price");
+        JButton btn2 = new JButton("Enter Resources charges");
+        JButton btn3 = new JButton("Enter Bed cost");
+        JTextField textdisharge4 = new JTextField("Disharge Patient");
+        textdisharge4.setEditable(false);
+        
+        JLabel lp1 = new JLabel("Date Prescription"); 
+        JLabel lp2 = new JLabel("Describe medicine");
+        JLabel lp3 = new JLabel("Need bed");
+        JLabel lp4 = new JLabel("Number of residency days");
+        
+        JTextField tp1 = new JTextField();
+        JTextField tp2 = new JTextField();
+        JTextField tp3 = new JTextField();
+        JTextField tp4 = new JTextField();
+        
+        lp1.setBounds(50, 100, 200, 30);
+        lp1.setForeground(Color.magenta);
+        lp1.setFont(new Font("Arial", Font.BOLD, 16));
+        lp2.setBounds(50, 150, 200, 30);
+        lp2.setForeground(Color.magenta);
+        lp2.setFont(new Font("Arial", Font.BOLD, 16));
+        lp3.setBounds(50, 200, 200, 30);
+        lp3.setForeground(Color.magenta);
+        lp3.setFont(new Font("Arial", Font.BOLD, 16));
+        lp4.setBounds(50, 250, 200, 30);
+        lp4.setForeground(Color.magenta);
+        lp4.setFont(new Font("Arial", Font.BOLD, 16));
+        
+        tp1.setBounds(300, 100, 160, 30);
+        tp1.setForeground(Color.magenta);
+        tp1.setFont(new Font("Arial", Font.BOLD, 16));
+        tp1.setEditable(false);
+        tp2.setBounds(300, 150, 160, 30);
+        tp2.setForeground(Color.magenta);
+        tp2.setFont(new Font("Arial", Font.BOLD, 16));
+        tp2.setEditable(false);
+        tp3.setBounds(300, 200, 160, 30);
+        tp3.setForeground(Color.magenta);
+        tp3.setFont(new Font("Arial", Font.BOLD, 16));
+        tp3.setEditable(false);
+        tp4.setBounds(300, 250, 160, 30);
+        tp4.setForeground(Color.magenta);
+        tp4.setFont(new Font("Arial",Font.BOLD, 16));
+        tp4.setEditable(false);
+        
+        btn1.setBounds(50, 300, 200,30);
+        btn1.setForeground(Color.MAGENTA);
+        btn2.setBounds(260, 300, 200,30);
+        btn2.setForeground(Color.MAGENTA);
+        btn3.setBounds(50, 350, 200,30);
+        btn3.setForeground(Color.MAGENTA);
+        textdisharge4.setBounds(260, 350, 200,30);
+        textdisharge4.setForeground(Color.MAGENTA);
+        btn1.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            String medicine_price = JOptionPane.showInputDialog(frame4, "Enter medicine Price");
+        }
+        });
+        
+        btn2.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            String Resources_charges = JOptionPane.showInputDialog(frame4, "Enter Resources charges");
+        }
+        });
+        
+        btn3.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            String bed_cost = JOptionPane.showInputDialog(frame4, "Enter Bed Cost");
+        }
+        });
+        
+        textdisharge4.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            //textdisharge4.setText(DishargePatient(patient));
+        }
+        });
+    
+        b8.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            frame4.setSize(500, 500);
+            frame4.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame4.setLocation(400, 120);
+            frame4.setResizable(false);
+            frame4.setLayout(null);
+            
+            
+            //btn submit
+            b4444.setText("View");
+            b4444.setBounds(50, 400, 150, 30);
+            b4444.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    viewPrescription(textsearch.getText()); 
+                    textsearch.setText("");
+                }
+            });
+
+            //btn back
+            b5.setBounds(300, 400, 150, 30);
+            b5.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    textsearch.setText("");
+                    frame4.setVisible(false);
+                    frame4.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setVisible(true);
+                }
+            });
+            frame4.add(labelsearch);frame4.add(textsearch);
+            frame4.add(lp1);frame4.add(lp2);frame4.add(lp3);frame4.add(lp4);
+            frame4.add(tp1);frame4.add(tp2);frame4.add(tp3);frame4.add(tp4);
+            frame4.add(b4444);frame4.add(b5);
+            frame4.add(btn1);frame4.add(btn2);frame4.add(btn3);frame4.add(textdisharge4);
+            frame4.setVisible(true);
+            frame.setVisible(false);
+        }
+    });
+    frame.add(b1);frame.add(b2);frame.add(b3);frame.add(b6);frame.add(b7);frame.add(b8);
+    frame.setVisible(true);
+}
+
+ //User_name
+public void setUser_name(String user_name)
+{
+      for(int i=0;i<user_name.length();++i)
+    {
+        if(user_name.charAt(i)=='@' ||user_name.charAt(i)=='#' || user_name.charAt(i)=='$'
+               || user_name.charAt(i)=='%'||user_name.charAt(i)=='&' || user_name.charAt(i)=='*')
+            {
+             System.out.println("invalid input for user_name , it can't contine any special character ");
+             break;
+            }
+         else
+            {
+              this.user_name = user_name;
+            }
+    }
+}
+
+
+
+
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public String getUser_password() {
+        return user_password;
+    }
+
+    //price of medicine
+    public void Medicine_price(Patient patient, float medicine) {
+        patient.setMedicine_price(medicine);
+    }
+
+
+    //cost
+    public void DishargePatient(Patient patient) {
+        patient.setCost(patient.getBed_cost() * patient.getNumber_residency_days() + patient.getResources_charges());
+    }
+
+    //add patient
+    protected int add_Patient(String id, String name, String Address, String mobile, String date, String token_id){
+       if(id.length()<=0|| name.length()<=1 || Address.length()<=2 || mobile.length()<=10 || date.length()<=2 || token_id.length()<=0){
+             JOptionPane.showMessageDialog(frame2, "Not Update", "Erorr", JOptionPane.ERROR_MESSAGE);
+             return Integer.parseInt(token_id);
+        }else{
+            Patient patient = new Patient(Integer.parseInt(id), name, Address, mobile);
+            JOptionPane.showMessageDialog(frame2, "Successfully Update", "Successful", JOptionPane.WARNING_MESSAGE);
+            int r = Integer.parseInt(token_id);
+            createTokenId(patient, r);
+            takeDate(patient, date);
+            return ++r ;
+
+        }
+    }
+
+   //create token id
+    public void createTokenId(Patient p, int tID){
+          p.setToken_id(tID);
+    }  
+
+    public void Resources_charges(Patient patient, float Resources_charges){
+          patient.setResources_charges(Resources_charges);
+      }
+
+    //date of visit doctor
+    public void takeDate(Patient p, String date){
+        p.setDate(date);
+    }
+
+    //view token inline
+     public void viewTokenInline(){
+         //read from database last patients who token id and display them by array
+     }
+     public  void viewPatient(String tokenID){
+         //int tid = Integer.parseInt(tokenID);
+     }
+
+    public void viewPrescription(String tokenID){
+        //int tid = Integer.parseInt(tokenID);
+    }
+
+        @Override
+    public void changepassword(String user_old_password, String user_new_password) {
+        if(user_old_password.equals(user_password)){
+            user_password = user_new_password;
+             JOptionPane.showMessageDialog(frame, "Successfully Update", "Successful", JOptionPane.WARNING_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(frame, "Old Password It's Not Correct", "Erorr", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+
+    @Override
+    public void logout() {
+        frame.setVisible(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+
+  }
