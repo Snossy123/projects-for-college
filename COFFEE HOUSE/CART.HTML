@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------font style-------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto+Condensed:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- -----------------icons----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shopify Website Layout|Cart</title>
+  </head>
+  <body>
+    <!-- -------navbar-------------  -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-head">
+      <div class="container-fluid">
+        <!-- ------------logo---------------- -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/logo.png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- ---------------nav menu--------------- -->
+        <div
+          class="navbar-collapse justify-content-center collapse"
+          id="navbarSupportedContent"
+        >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="ABOUT US.HTML"
+              >ABOUT US</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="SHOP.html">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="BLOG.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="CONTACT.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="ADMIN.HTML">ADMIN</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+          <li class="nav-item">
+            <a class="nav-link profile-img" aria-current="page" href="CART.HTML">
+              <img src="images/man.png" />
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------welcome-picture--------------- -->
+    <div class="cart-pic welcome-pic welcome-pic-ABOUT-US">
+      <p>
+        WELCOME TO COFFEEHOUSE
+
+        <br />
+        <b class="welcome-mess"
+          >SHOPPING
+          <br />
+          <span>CART</span></b
+        ><br />
+         
+      </p>
+    </div>
+    <!-- -------------------sec2------------------------ -->
+    <div class="content">
+      <aside class="shadow-sm cart">
+        <table class="table">
+          <thead>
+            <th>First Name</th>
+            <th>price</th>
+            <th>number of pieces</th>
+            <th>decription</th>
+            <th>image</th>
+            <th>delete</th>
+          </thead>
+          <tbody id="cart_pro">
+            
+          </tbody>
+          <tfoot>
+            <td>total price</td>
+            <td><b id="total_cart">0</b><span>$</span></td>
+          </tfoot>
+        </table>
+        
+      </aside>
+       
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-outline-danger"><a href="SHOP.html"> CONTINUE SHOPPING</a></button> 
+            <button type="button" class="btn btn-outline-success">GO TO CHECKOUT COFFEE HOUSE</button>
+          </div>
+    <!-- --------------------footer-------------- -->
+    <footer class="bg-secondary text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">COFFEE HOUSE</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p>
+                  CoffeHouse is open every day Monday - Sunday from 10 am to
+                  5pm. Including bank holidays
+                </p>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>
+                  Sample Address Deir Al Bahar Tower, Corniche Road, Al Shati,
+                  Jeddah 23613, Kingdom of Saudi Arabia
+                </p>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="#!" class="text-dark">+353 61 123 123</a>
+              </li>
+              <li>
+                <i class="far fa-envelope"></i>
+                <a href="#!" class="text-dark">coffeehouse@mail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">USEFUL LINKS</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Home </a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">FAQ</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Shop</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">OTHER LOCATIONS</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p><b>LIFE COFFEESHOP</b></p>
+              </li>
+              <li>
+                <p>
+                  7726 Specialist, Al Nakheel, Riyadh 12384, Kingdom of Saudi
+                  Arabia
+                </p>
+              </li>
+              <li>
+                <p><b>ARABICA</b></p>
+              </li>
+              <li>
+                <p>
+                  Al-Madinah Al-Munawwarah Road, Al-Uraija Al-Gharbia, Riyadh
+                  12978, Kingdom of Saudi Arabia
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">FOLLOW US</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-facebook-f"></i>
+                <a href="#!" class="text-dark">Facebook</a>
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i>
+                <a href="#!" class="text-dark">Twitter</a>
+              </li>
+              <li>
+                <i class="fab fa-instagram"></i>
+                <a href="#!" class="text-dark">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3 like"
+        style="background-color: #313337; color: #fff"
+      >
+        © 2021 Copyright:
+        <a class="text-light" href="https://mdbootstrap.com/">CoffeeHouse</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/orders.js"></script>
+  </body>
+</html>
