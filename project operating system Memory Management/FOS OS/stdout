@@ -1,0 +1,21 @@
+
+
+
+	     	     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	     	     !!                                                             !!
+	     	     !!                   !! FCIS says HELLO !!                     !!
+	     	     !!                                                             !!
+	     	     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+Physical memory: 32768K available, base = 640K, extended = 31744K
+Max Envs = 12
+check_boot_pgdir() succeeded!
+
+Welcome to the FOS kernel command prompt!
+Type 'help' for a list of commands.
+FOS> run tpr1 10 5
+
+Environment Id= 4096
