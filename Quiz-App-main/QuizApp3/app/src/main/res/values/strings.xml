@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">QuizApp3</string>
+    <string name="welcome">Welcome to Quizz</string>
+    <string name="startquiz">START THE QUIZ</string>
+    <string name="questionnum">Question 1/8</string>
+    <string name="question">What does CSS stand for?</string>
+    <string name="nextquestion">Next Question</string>
+    <string name="option1">" Computer Style Sheets"</string>
+    <string name="option2">" Creative Style Sheets"</string>
+    <string name="option3">" Cascading Style Sheets"</string>
+    <string name="option4">" Colorful Style Sheets"</string>
+    <string name="title_activity_quizhome">quizhome</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="topic_name">Topic Nmae</string>
+    <string name="num_of_question">Num Of Question</string>
+    <string name="create_question">Create Question</string>
+    <string name="enter_solution">Enter Solution</string>
+</resources>
