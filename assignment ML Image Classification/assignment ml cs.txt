@@ -1,0 +1,13 @@
+الاسم : سليمان سنوسي سليمان مبروك
+department : CS
+id : 20191700290
+
+train accuracy using SVC kernel=linear : 0.718
+train accuracy using LinearSVC : 0.765
+train accuracy using SVC kernel=rbf : 1.0
+train accuracy using svc kernel=poly : 0.7285
+
+test accuracy using SVC kernel=linear : 0.725
+test accuracy using LinearSVC : 0.715
+test accuracy using SVC kernel=rbf : 0.505
+test accuracy using svc kernel=poly : 0.695
