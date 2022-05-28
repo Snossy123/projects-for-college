@@ -1,0 +1,6 @@
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\bin\Release\IsTree.exe
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\bin\Release\IsTree.pdb
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Release\IsTree.csprojAssemblyReference.cache
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Release\IsTree.csproj.CoreCompileInputs.cache
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Release\IsTree.exe
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Release\IsTree.pdb

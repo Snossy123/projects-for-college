@@ -1,0 +1,10 @@
+name : سليمان سنوسي سليمان مبروك
+department : cs
+id : 20191700290
+
+=========================
+- I used Polynomial Regression
+- I choose ploynomial regression with degree 4 becuase this give me smallest MSE
+- I used car maker, year and kilometers columns becouse there are littel feature
+
+ 

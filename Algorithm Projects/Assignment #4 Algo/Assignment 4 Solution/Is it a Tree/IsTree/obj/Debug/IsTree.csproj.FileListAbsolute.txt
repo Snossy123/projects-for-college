@@ -1,0 +1,36 @@
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\bin\Debug\IsTree.exe
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\bin\Debug\IsTree.pdb
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Debug\IsTree.csprojAssemblyReference.cache
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.CoreCompileInputs.cache
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Debug\IsTree.exe
+E:\3mr\Task\_SOLUTIONS\_SOLUTIONS\Task Solution\[2] Is it a Tree_SOLUTION\Is it a Tree\IsTree\obj\Debug\IsTree.pdb
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\bin\Debug\IsTree.exe
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\bin\Debug\IsTree.pdb
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.csprojAssemblyReference.cache
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.CoreCompileInputs.cache
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.exe
+E:\3mr\Task\Updated Task [2] Is it a Tree\[2] Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.pdb
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.exe
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\obj\Debug\IsTree.pdb
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\bin\Debug\IsTree.exe.config
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\bin\Debug\IsTree.exe
+C:\Users\hp\Downloads\ASs4\ASM4\ASM4\ASM4\Is it a Tree\Is it a Tree\IsTree\bin\Debug\IsTree.pdb
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\bin\Debug\IsTree.exe.config
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\bin\Debug\IsTree.exe
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\bin\Debug\IsTree.pdb
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\obj\Debug\IsTree.exe
+C:\Users\hp\Downloads\ASs4\Is it a Tree\IsTree\obj\Debug\IsTree.pdb
+C:\Users\hp\Downloads\Is it a Tree\IsTree\bin\Debug\IsTree.exe.config
+C:\Users\hp\Downloads\Is it a Tree\IsTree\bin\Debug\IsTree.exe
+C:\Users\hp\Downloads\Is it a Tree\IsTree\bin\Debug\IsTree.pdb
+C:\Users\hp\Downloads\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\Downloads\Is it a Tree\IsTree\obj\Debug\IsTree.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\Is it a Tree\IsTree\obj\Debug\IsTree.exe
+C:\Users\hp\Downloads\Is it a Tree\IsTree\obj\Debug\IsTree.pdb

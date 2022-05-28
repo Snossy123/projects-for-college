@@ -1,0 +1,6 @@
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\bin\Debug\FindTheRoot.exe
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\bin\Debug\FindTheRoot.pdb
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\obj\Debug\FindTheRoot.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\obj\Debug\FindTheRoot.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\obj\Debug\FindTheRoot.exe
+C:\Users\hp\Downloads\New folder\ASM3\[2] Find the Root\FindTheRoot\FindTheRoot\obj\Debug\FindTheRoot.pdb
